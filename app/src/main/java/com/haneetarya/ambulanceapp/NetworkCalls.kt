@@ -9,4 +9,6 @@ interface NetworkCalls {
     @GET("hospital")
     fun getHospitals(): Call<ArrayList<HospitalModel>>
 
+    @GET("driver")
+    fun getDrivers(): Call<ArrayList<DriverModel>>
 }

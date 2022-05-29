@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable/btn_bg.xml" value="0.149" />
         <entry key="app/src/main/res/drawable/edittext_bg.xml" value="0.149" />
+        <entry key="app/src/main/res/drawable/ic_ambulance.xml" value="0.149" />
         <entry key="app/src/main/res/layout/activity_get_started.xml" value="0.21924641927083333" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.1929054054054054" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1929054054054054" />

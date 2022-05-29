@@ -22,5 +22,12 @@ class Login : AppCompatActivity() {
                 startActivity(Intent(applicationContext,Home::class.java))
             }
         }
+
+        binding.resend.setOnClickListener{
+            startActivity(Intent(applicationContext,SignUp::class.java))
+            finish()
+        }
+
+
     }
 }
