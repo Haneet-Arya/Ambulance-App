@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@color/bgcolor">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Create Account"
+        android:textColor="@color/whiteH"
+        android:textSize="30sp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/sfregular"
+        android:id="@+id/header"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Find the Ambulance Easily without any delay!"
+        android:textColor="#80FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginLeft="22dp"
+
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/signup"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="45dp"
+        android:id="@+id/imageSignup"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/whiteH"
+        app:layout_constraintTop_toBottomOf="@id/imageSignup"
+        android:layout_marginTop="9dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="35dp"
+        android:fontFamily="@font/sfregular"
+        android:textSize="16sp"
+        android:id="@+id/name"
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Enter Your Name (eg. James)"
+        android:textColorHint="@color/whiteS"
+        android:fontFamily="@font/sfregular"
+        android:textColor="#fff"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="7dp"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/nameEditText"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Email Address"
+        android:textColor="@color/whiteH"
+        android:fontFamily="@font/sfregular"
+        android:layout_marginLeft="35dp"
+        android:textSize="16sp"
+        android:layout_marginTop="34dp"
+        android:id="@+id/email"
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="Enter Your email address (eg. james0123@gmail.com)"
+        android:singleLine="true"
+        android:textColorHint="@color/whiteS"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:fontFamily="@font/sfregular"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="7dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/emailEdittext"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emailEdittext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/btn_bg"
+        android:id="@+id/nextBtn"
+        android:text="Next"
+        android:backgroundTint="@null"
+        android:textColor="#fff"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="62dp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

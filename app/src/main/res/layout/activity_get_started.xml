@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetStarted">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/getstartedbg"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="176dp"
+        android:src="@drawable/applogo"
+        android:id="@+id/logo"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="94dp"
+        android:text="Let's Get Started"
+        android:textColor="@color/whiteH"
+        android:textSize="60sp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/sfregular"
+        android:textFontWeight="500"
+        android:id="@+id/wish"
+
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/wish"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/details_of_app"
+        android:textColor="@color/whiteS"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/appDetails"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/appDetails"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="#0957DE"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/sfregular"
+        android:textSize="16sp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:id="@+id/signup_btn"
+        />
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/signup_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Already have an account?"
+        android:textColor="@color/whiteS"
+        android:gravity="right"
+        app:layout_constraintRight_toLeftOf="@id/login"
+        android:layout_marginTop="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:fontFamily="@font/sfregular"
+        android:id="@+id/alreadyHaveAccount"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Login"
+        app:layout_constraintLeft_toRightOf="@id/alreadyHaveAccount"
+        app:layout_constraintTop_toBottomOf="@id/signup_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/whiteH"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:fontFamily="@font/sfregular"
+        android:id="@+id/login"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

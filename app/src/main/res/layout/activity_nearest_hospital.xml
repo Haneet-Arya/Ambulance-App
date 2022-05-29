@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent" android:layout_width="match_parent"
+    android:background="@color/bgcolor">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="27dp"
+        android:id="@+id/back"
+        android:layout_marginLeft="18dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_wallet"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Nearest Hospital"
+        android:textColor="@color/whiteH"
+        android:textSize="30sp"
+        android:fontFamily="@font/sfregular"
+        android:layout_marginLeft="21dp"
+        android:id="@+id/welcome"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Finding Nearest Hospital around you."
+        android:textColor="#66FFFFFF"
+        android:textSize="16sp"
+        android:fontFamily="@font/sfregular"
+        android:layout_marginLeft="21dp"
+        android:id="@+id/greetings"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        map:layout_constraintTop_toBottomOf="@id/greetings"
+        map:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="9dp"
+        map:cardCornerRadius="7dp"
+        android:layout_marginLeft="34dp"
+        android:id="@+id/mapCard"
+        android:layout_marginRight="34dp"
+        map:layout_constraintRight_toRightOf="parent"
+        >
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".NearestHospital" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Santa Maria del Fiore"
+        android:textColor="@color/whiteH"
+        android:textSize="20sp"
+        map:layout_constraintTop_toBottomOf="@id/mapCard"
+        map:layout_constraintLeft_toLeftOf="parent"
+        map:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="21dp"
+        android:id="@+id/hospitalName"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/hospitalName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="#0957DE"
+        android:layout_marginTop="31dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Book Now"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/sfregular"
+        android:textSize="16sp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:id="@+id/bookbtn"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
