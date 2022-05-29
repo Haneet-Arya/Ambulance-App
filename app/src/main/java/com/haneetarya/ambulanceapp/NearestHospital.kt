@@ -97,7 +97,7 @@ class NearestHospital : AppCompatActivity(), OnMapReadyCallback {
         mMap.getUiSettings().isMyLocationButtonEnabled = false;
         mMap.getUiSettings().setAllGesturesEnabled(true);
 
-        // Add a marker in Sydney and move the camera
+
         val call = RetrofitSingleton.networkCalls.getHospitals()
         call.enqueue(object : Callback<ArrayList<HospitalModel>> {
             override fun onResponse(
